@@ -1,0 +1,14 @@
+11:15:47.169 -> Degradation Score (D): 0.72
+11:15:47.169 -> Remaining Useful Life (RUL): 27.74 %
+11:15:47.169 -> Predictive Maintenance Index (PMI): 0.82
+11:15:47.169 -> System Decision: WARNING
+11:15:47.169 -> =================================
+11:15:47.169 -> Queue: 8 | Temp: 34.00 | Vib: 0.99 | Current: 0.00
+11:15:47.169 -> -------------------------
+11:15:47.304 -> ========= HEALTH REPORT =========
+11:15:47.343 -> Degradation Score (D): 0.72
+11:15:47.343 -> Remaining Useful Life (RUL): 27.54 %
+11:15:47.343 -> Predictive Maintenance Index (PMI): 0.82
+11:15:47.343 -> System Decision: WARNING
+11:15:47.343 -> =================================
+11:15:47.343 -> Queue: 8 | Temp: 34.00 | Vib: 1.00 | Current: 0.00
