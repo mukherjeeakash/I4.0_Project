@@ -4,16 +4,16 @@
 #include <DHT.h>
 #include <MPU6050.h>
 
-// 🔹 WiFi Credentials
+//  WiFi Credentials
 const char* ssid = "AM-128";
 const char* password = "password";
 
-// 🔹 ThingSpeak
+//  ThingSpeak
 unsigned long channelID = 3339984;
 const char* apiKey = "757U2DYA9T3EKGF4";
 WiFiClient client;
 
-// 🔹 Pins
+//  Pins
 const int ir1 = 25;
 const int ir2 = 26;
 const int ir3 = 27;
@@ -29,7 +29,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 MPU6050 mpu;
 
-// 🔹 Variables
+//  Variables
 int queue = 0;
 int prevIR1 = HIGH, prevIR2 = HIGH, prevIR3 = HIGH;
 
@@ -39,16 +39,16 @@ bool processRunning = false;
 
 unsigned long lastUpdate = 0;
 
-// 🔹 Thresholds
+//  Thresholds
 const float tempThreshold = 35.0;
 const float vibrationThreshold = 1.5;
 const float currentThreshold = 1.02;
 
-// 🔹 ACS712
+//  ACS712
 float sensitivity = 0.185;
 float offsetVoltage = 1.52;
 
-// 🔹 ML constants
+//  ML constants
 float T_crit = 35.0;
 float V_crit = 1.5;
 float Q_crit = 3.0;
@@ -63,11 +63,11 @@ float gamma_coeff = 0.2;
 
 float R_max = 100.0;
 
-// 🔥 Motor state
+//  Motor state
 bool motorRunning = true;
 
 // ================================
-// 📊 HEALTH REPORT FUNCTION
+//  HEALTH REPORT FUNCTION
 // ================================
 void printHealthMetrics(float D, float RUL, float PMI, String decision) {
   Serial.println("========= HEALTH REPORT =========");
